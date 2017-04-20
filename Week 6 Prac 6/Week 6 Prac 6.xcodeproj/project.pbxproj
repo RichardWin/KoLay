@@ -14,6 +14,9 @@
 		6848ED251EA8622B00C4EFBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6848ED231EA8622B00C4EFBB /* LaunchScreen.storyboard */; };
 		6848ED301EA8622B00C4EFBB /* Week_6_Prac_6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6848ED2F1EA8622B00C4EFBB /* Week_6_Prac_6Tests.swift */; };
 		6848ED3B1EA8622B00C4EFBB /* Week_6_Prac_6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6848ED3A1EA8622B00C4EFBB /* Week_6_Prac_6UITests.swift */; };
+		6848ED491EA86C2B00C4EFBB /* TblViewControllerTripInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6848ED481EA86C2B00C4EFBB /* TblViewControllerTripInfo.swift */; };
+		6848ED4B1EA86C6600C4EFBB /* TblViewControllerTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6848ED4A1EA86C6600C4EFBB /* TblViewControllerTrips.swift */; };
+		6848ED4F1EA8717900C4EFBB /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6848ED4E1EA8717900C4EFBB /* Trip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		6848ED361EA8622B00C4EFBB /* Week 6 Prac 6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Week 6 Prac 6UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6848ED3A1EA8622B00C4EFBB /* Week_6_Prac_6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week_6_Prac_6UITests.swift; sourceTree = "<group>"; };
 		6848ED3C1EA8622B00C4EFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6848ED481EA86C2B00C4EFBB /* TblViewControllerTripInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblViewControllerTripInfo.swift; sourceTree = "<group>"; };
+		6848ED4A1EA86C6600C4EFBB /* TblViewControllerTrips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblViewControllerTrips.swift; sourceTree = "<group>"; };
+		6848ED4E1EA8717900C4EFBB /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,11 @@
 				6848ED1C1EA8622B00C4EFBB /* ViewController.swift */,
 				6848ED1E1EA8622B00C4EFBB /* Main.storyboard */,
 				6848ED211EA8622B00C4EFBB /* Assets.xcassets */,
+				6848ED4E1EA8717900C4EFBB /* Trip.swift */,
 				6848ED231EA8622B00C4EFBB /* LaunchScreen.storyboard */,
 				6848ED261EA8622B00C4EFBB /* Info.plist */,
+				6848ED481EA86C2B00C4EFBB /* TblViewControllerTripInfo.swift */,
+				6848ED4A1EA86C6600C4EFBB /* TblViewControllerTrips.swift */,
 			);
 			path = "Week 6 Prac 6";
 			sourceTree = "<group>";
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6848ED4F1EA8717900C4EFBB /* Trip.swift in Sources */,
+				6848ED491EA86C2B00C4EFBB /* TblViewControllerTripInfo.swift in Sources */,
 				6848ED1D1EA8622B00C4EFBB /* ViewController.swift in Sources */,
+				6848ED4B1EA86C6600C4EFBB /* TblViewControllerTrips.swift in Sources */,
 				6848ED1B1EA8622B00C4EFBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
