@@ -17,6 +17,10 @@
 		6848ED491EA86C2B00C4EFBB /* TblViewControllerTripInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6848ED481EA86C2B00C4EFBB /* TblViewControllerTripInfo.swift */; };
 		6848ED4B1EA86C6600C4EFBB /* TblViewControllerTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6848ED4A1EA86C6600C4EFBB /* TblViewControllerTrips.swift */; };
 		6848ED4F1EA8717900C4EFBB /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6848ED4E1EA8717900C4EFBB /* Trip.swift */; };
+		68FC1B6F1EB1946000051C1E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FC1B6E1EB1946000051C1E /* MapKit.framework */; };
+		68FC1B711EB19A4C00051C1E /* TripMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC1B701EB19A4C00051C1E /* TripMapViewController.swift */; };
+		68FC1B731EB1A08300051C1E /* TripAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC1B721EB1A08300051C1E /* TripAnnotation.swift */; };
+		68FC1B791EB1B0FF00051C1E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC1B781EB1B0FF00051C1E /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		6848ED481EA86C2B00C4EFBB /* TblViewControllerTripInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblViewControllerTripInfo.swift; sourceTree = "<group>"; };
 		6848ED4A1EA86C6600C4EFBB /* TblViewControllerTrips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblViewControllerTrips.swift; sourceTree = "<group>"; };
 		6848ED4E1EA8717900C4EFBB /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		68FC1B6E1EB1946000051C1E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		68FC1B701EB19A4C00051C1E /* TripMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripMapViewController.swift; sourceTree = "<group>"; };
+		68FC1B721EB1A08300051C1E /* TripAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripAnnotation.swift; sourceTree = "<group>"; };
+		68FC1B781EB1B0FF00051C1E /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FC1B6F1EB1946000051C1E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +96,7 @@
 				6848ED2E1EA8622B00C4EFBB /* Week 6 Prac 6Tests */,
 				6848ED391EA8622B00C4EFBB /* Week 6 Prac 6UITests */,
 				6848ED181EA8622B00C4EFBB /* Products */,
+				68FC1B6D1EB1946000051C1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +115,10 @@
 			children = (
 				6848ED1A1EA8622B00C4EFBB /* AppDelegate.swift */,
 				6848ED1C1EA8622B00C4EFBB /* ViewController.swift */,
+				68FC1B721EB1A08300051C1E /* TripAnnotation.swift */,
 				6848ED1E1EA8622B00C4EFBB /* Main.storyboard */,
+				68FC1B781EB1B0FF00051C1E /* LocationService.swift */,
+				68FC1B701EB19A4C00051C1E /* TripMapViewController.swift */,
 				6848ED211EA8622B00C4EFBB /* Assets.xcassets */,
 				6848ED4E1EA8717900C4EFBB /* Trip.swift */,
 				6848ED231EA8622B00C4EFBB /* LaunchScreen.storyboard */,
@@ -132,6 +145,14 @@
 				6848ED3C1EA8622B00C4EFBB /* Info.plist */,
 			);
 			path = "Week 6 Prac 6UITests";
+			sourceTree = "<group>";
+		};
+		68FC1B6D1EB1946000051C1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68FC1B6E1EB1946000051C1E /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +224,11 @@
 					6848ED161EA8622B00C4EFBB = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6848ED2A1EA8622B00C4EFBB = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -268,6 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FC1B731EB1A08300051C1E /* TripAnnotation.swift in Sources */,
+				68FC1B711EB19A4C00051C1E /* TripMapViewController.swift in Sources */,
+				68FC1B791EB1B0FF00051C1E /* LocationService.swift in Sources */,
 				6848ED4F1EA8717900C4EFBB /* Trip.swift in Sources */,
 				6848ED491EA86C2B00C4EFBB /* TblViewControllerTripInfo.swift in Sources */,
 				6848ED1D1EA8622B00C4EFBB /* ViewController.swift in Sources */,
@@ -517,6 +546,7 @@
 				6848ED411EA8622B00C4EFBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6848ED421EA8622B00C4EFBB /* Build configuration list for PBXNativeTarget "Week 6 Prac 6Tests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +555,7 @@
 				6848ED441EA8622B00C4EFBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6848ED451EA8622B00C4EFBB /* Build configuration list for PBXNativeTarget "Week 6 Prac 6UITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +564,7 @@
 				6848ED471EA8622B00C4EFBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

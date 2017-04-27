@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class TblViewControllerTripInfo: UITableViewController {
     
@@ -57,6 +58,15 @@ class TblViewControllerTripInfo: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
+                 calloutAccessoryControlTapped control: UIControl){
+        let selectedTrip = Utilities.trips[ (view.annotation as! TripAnnotation).tripId]
+        let tripInfoVC = (self.storyboard?.instantiateViewController(withIdentifier: "tripInfo") as! TblViewControllerTripInfo)
+        
+        tripInfoVC.trip = selectedTrip
+        self.present(tripInfoVC, animated: true, completion: nil)
     }
 
     /*
